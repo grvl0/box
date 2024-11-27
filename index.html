@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Match Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Голосуй за победителя</h1>
+    <div class="timer" id="countdown">00:00:00:00</div>
+    <div class="container">
+        <div class="fighter">
+            <div class="image-container">
+                <img src="Vitja.jpg" alt="Boxer 1" id="boxer1-img">
+            </div>
+            <h2>Boxer 1</h2>
+            <button class="vote-button" onclick="vote('boxer1')">Виктор</button>
+            <div class="vote-count" id="boxer1-votes">Votes: 0</div>
+        </div>
+        <div class="fighter">
+            <div class="image-container">
+                <img src="Damich.jpg" alt="Boxer 2" id="boxer2-img">
+            </div>
+            <h2>Boxer 2</h2>
+            <button class="vote-button" onclick="vote('boxer2')">Дамир</button>
+            <div class="vote-count" id="boxer2-votes">Votes: 0</div>
+        </div>
+    </div>
+    <div class="fight-info">
+        <p><strong>Место проведения боя:</strong></p>
+        <p>Рига, Золитудкая гимназия, спортивная площадка (Rīgas Zolitūdes ģimnāzijas sporta laukums).</p>
+        <p>Не пропустите главное спортивное событие года, где встретятся лучшие боксеры! Поддержите своего фаворита прямо сейчас, голосуя выше. Увидимся на ринге!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
